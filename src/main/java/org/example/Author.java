@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Author {
 
-    Author[]authors = new Author[15];
+    //Author[]authors = new Author[15];
 
     int pN;
     String name;
@@ -14,18 +14,18 @@ public class Author {
         this.pN = pN;
         this.name = name;
         this.books = books;
-        authors[Authorsequencer.getCounter()]=this;
+        //authors[Authorsequencer.getCounter()]=this;
     }
 
     public Author(int pN, String name) {
         this.pN = pN;
         this.name = name;
-        authors[Authorsequencer.getCounter()]=this;
+        //authors[Authorsequencer.getCounter()]=this;
     }
 
-    public Author[] getAuthors() {
+    /*public Author[] getAuthors() {
         return authors;
-    }
+    }*/
 
     public int getpN() {
         return pN;

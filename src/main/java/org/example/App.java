@@ -27,8 +27,14 @@ public class App
         Author author1 = new Author(351229,"Doyle");
         Author author2 = new Author(351230,"Erik");
         Author author3 = new Author(351231,"Simon");
-        Author[]authors = new Author[5];
-        authors[Authorsequencer.getCounter()]= new Author(381231,"Kalle");
+        Author[]authors = new Author[3];
+        authors[Authorsequencer.getCounter()] = author1;
+        authors[Authorsequencer.getCounter()]= author2;
+        authors[Authorsequencer.getCounter()]= author3;
+        /*authors[Authorsequencer.getCounter()] = new Author(351229,"Doyle");
+        authors[Authorsequencer.getCounter()]= new Author(351230,"Erik");
+        authors[Authorsequencer.getCounter()]= new Author(351231,"Simon");
+        authors[Authorsequencer.getCounter()]= new Author(381231,"Kalle");*/
         Book baskerville = new Book(1,"Baskerville",author1);
         Book c = new Book(2,"C",author2);
         Book d = new Book(3,"D",author3);

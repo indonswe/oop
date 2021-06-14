@@ -4,8 +4,9 @@ public class Authorsequencer {
     private static int counter = 0;
 
     public static int getCounter() {
-        counter=counter++;
-        return counter;
+        int amount = counter++;
+        System.out.println(counter);
+        return amount;
     }
 
     public static void resetCounter() {
