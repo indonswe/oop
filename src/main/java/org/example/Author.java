@@ -3,6 +3,9 @@ package org.example;
 import java.util.Arrays;
 
 public class Author {
+
+    Author[]authors = new Author[15];
+
     int pN;
     String name;
     Book[]books = new Book[0];
@@ -11,15 +14,18 @@ public class Author {
         this.pN = pN;
         this.name = name;
         this.books = books;
+        authors[Authorsequencer.getCounter()]=this;
     }
 
     public Author(int pN, String name) {
         this.pN = pN;
         this.name = name;
-
+        authors[Authorsequencer.getCounter()]=this;
     }
 
-
+    public Author[] getAuthors() {
+        return authors;
+    }
 
     public int getpN() {
         return pN;
