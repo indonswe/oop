@@ -23,5 +23,9 @@ public class App
         rectangle.setHeight(height);
         rectangle.setWidth(width);
         System.out.println("Calculated area: "+ rectangle.getArea());
+        Author[]authors = new Author[0];
+
+        Author author1 = new Author(351231,"Doyle",1);
+
     }
 }
