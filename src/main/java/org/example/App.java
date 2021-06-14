@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -32,7 +33,7 @@ public class App
         Book d = new Book(3,"D",author3);
         Book e = new Book(4,"E",author1);
         Book f = new Book(5,"F",author1);
-        System.out.println(author1.getBooks());
-        System.out.println(baskerville.getAuthor());
+        System.out.println(Arrays.toString(author1.getBooks()));
+        System.out.println(baskerville.getAuthor().toString());
     }
 }

@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Arrays;
+
 public class Author {
     int pN;
     String name;
@@ -48,5 +50,12 @@ public class Author {
         }
         newArray[amount] = book;
         books = newArray;
+    }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }
